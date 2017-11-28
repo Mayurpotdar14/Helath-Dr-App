@@ -1,0 +1,37 @@
+<resources>
+
+    <string name="app_name">MIS</string>
+    <string-array name="rollName">
+        <item >Patient</item>
+        <item >Doctor</item>
+        <item >Medical Practitioner</item>
+    </string-array>
+    <string-array name="ageList">
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+    </string-array>
+    
+    <string-array name="cityList">
+        <item >Nashik</item>
+        <item >Mumbai</item>
+        <item >Pune</item>
+        <item >Aurangabad</item>
+    </string-array>
+    
+    <string-array name="medicineList">
+        <item >Combiflame</item>
+        <item >Nice</item>
+        <item >Pentop-DSR</item>
+        <item >Tus-Q</item>
+    </string-array>
+    
+     <string-array name="medicineTypeList">
+        <item >Syrup</item>
+        <item >Tablet</item>
+        <item >Capsule</item>
+        <item >Injection</item>
+    </string-array>
+
+</resources>

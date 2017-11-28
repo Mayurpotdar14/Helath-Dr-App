@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="40dp"
+        />
+
+    <EditText
+        android:id="@+id/signupUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/signupPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        >       
+    </EditText>
+     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Roll"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     <Spinner 
+        android:id="@+id/signupRoll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/rollName"
+         />
+      <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="60dp"
+         android:layout_gravity="center"
+          >
+     <Button
+         android:id="@+id/signupNext"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Next"/>
+     
+      <Button
+         android:id="@+id/signupExit"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Exit"/>
+       </LinearLayout>
+
+</LinearLayout>

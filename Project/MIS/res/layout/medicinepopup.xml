@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"   
+    android:background="@android:color/background_light"    
+     >
+     <LinearLayout 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="vertical" 
+     android:layout_margin="3dp"
+     android:background="@android:color/darker_gray">
+     >
+     <LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    		
+     >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicine Type" 
+        android:textStyle="bold"
+        />
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/medicine_type" 
+        android:entries="@array/medicineTypeList"
+        android:scrollbars="vertical"
+                
+        />
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicine Name"
+        android:textStyle="bold" 
+        />
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/medicine_name"
+        android:entries="@array/medicineList"   
+        android:scrollbars="vertical"             
+        />
+    </LinearLayout>
+    
+      <LinearLayout 
+    	android:layout_width="wrap_content"    
+    	android:layout_height="wrap_content"	
+    	android:orientation="horizontal"     	   	
+     >
+    
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicine Quantity"
+        android:textStyle="bold" 
+        />
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/medicine_quantity" 
+                
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Days" 
+        android:textStyle="bold"
+        />
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/medicine_days"                
+        />    
+        
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicine Dose"
+        android:textStyle="bold" 
+        />
+   <LinearLayout 
+    	android:layout_width="wrap_content"    
+    	android:layout_height="wrap_content"	
+    	android:orientation="horizontal"    		
+     >
+    
+    <CheckBox
+        android:id="@+id/morning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Morning"/>
+    <CheckBox
+        android:id="@+id/afternoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Afternoon" />
+     <CheckBox
+        android:id="@+id/evening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Evening" />
+     
+    </LinearLayout>
+     <CheckBox
+        android:id="@+id/night"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Night" />
+      <LinearLayout 
+    	android:layout_width="wrap_content"    
+    	android:layout_height="wrap_content"	
+    	android:orientation="horizontal"
+    	android:layout_gravity="center"
+    	
+    	>
+     
+       <Button 
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:text="Add"
+           android:id="@+id/addToList"
+        />
+       <Button 
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:text="Cancel"
+           android:id="@+id/cancel"
+        />
+     
+       </LinearLayout>
+     
+     
+     </LinearLayout>
+
+</LinearLayout>
